@@ -30,6 +30,7 @@ frontend https_front
     default_backend http_back
 
 backend http_back
+    mode http
     balance roundrobin
     server web-01 54.152.229.220:80 check
     server web-02 44.206.247.173:80 check
